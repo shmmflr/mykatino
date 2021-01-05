@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+button {
+  border: none !important;
+  outline: none !important;
+}
+body {
+  direction: rtl;
+  font-family: 'Vazir Light';
+  background-color: #e5e5e5;
+}
+.my-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.w-80 {
+  max-width: 80% !important;
+}
+.btn-record {
+  background-color: #ffa10b;
+  color: white !important;
+  border-radius: 15px !important;
+}
+.btn-login {
+  background-color: #1750ff;
+  color: white !important;
+  border-radius: 15px !important;
+}
+.b-nav {
+  background-image: url('../img/Rectangle37.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 350px;
+}
+.b-nav-items {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 10px 0;
+  margin: 0 30px;
+}
+.input-items {
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 15px;
+  padding: 5px 0 !important;
+}
+.input-item {
+  outline: none !important;
+  border: none !important;
+}
+.input-item::placeholder {
+  font-size: 13px;
+}
+.icon-pre {
+  background-color: transparent !important;
+  border: none;
+  color: #e5e5e5;
+}
+.label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #282b31;
+}
+.my-card {
+  width: 165px;
+  height: 165px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+}
+.para-card {
+  font-size: 14px;
+  color: #575a7a;
+}
+.tittle-font {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #282b31;
+}
+.tittle-font2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #282b31;
+}
+.b-redius {
+  border-radius: 15px;
+}
+
+.my-card-2 {
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+.my-card-3 {
+  padding: 20px;
+  background-color: #ffffff;
+}
+.font-title-body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 20px;
+}
+.font-text-body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.my-btn-1 {
+  background: #1750ff;
+  border-radius: 15px;
+  color: #fff;
+}
+.resume {
+  padding-top: 120px;
+}
+.resume-items {
+  display: flex;
+}
+.resume-img {
+  width: 390px;
+  height: 350px;
+}
+.resume-title {
+  font-family: 'Vazir Bold';
+  font-size: 36px;
+  line-height: 20px;
+  color: #282b31;
+}
+.resume-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #575a7a;
+}
+.my-btn-2 {
+  width: 290px;
+  height: 50px;
+  background: #fff6de;
+  border-radius: 15px;
+  color: #ffa10b;
+  font-size: 14px;
+  outline: #ffa10b !important;
+  border: none !important;
+}
+.line-row {
+  border-top: 2px solid #cccccc;
+}
+.top-nav-title {
+  font-family: 'Vazir Bold';
+  font-size: 20px;
+  line-height: 20px;
+  color: #282b31;
+}
+.top-nav-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.my-card-4 {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+.my-card-4-title {
+  font-style: normal;
+  font-family: 'Vazir Bold';
+  font-size: 16px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.my-card-4-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.my-bg-light {
+  background-color: #ffffff;
+}
+.my-footer {
+  margin-top: 100px;
+  padding-top: 50px;
+}
+.footer-title {
+  font-family: 'Vazir Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #282b31;
+}
+.footer-txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.footer-txt:hover {
+  color: black;
+}
+/* .footer-img {
+ padding: 20px;
+} */
+.telegram {
+  color: #000000;
+  transition: 0.3s;
+}
+.telegram:hover {
+  color: #33aae0;
+}
+.insta {
+  color: #000000;
+  transition: 0.3s;
+}
+.insta:hover {
+  color: #de4570;
+}
+.linkdin {
+  color: #000000;
+  transition: 0.3s;
+}
+.linkdin:hover {
+  color: #0073b1;
+}
+.whatsup {
+  color: #000000;
+  transition: 0.3s;
+}
+.whatsup:hover {
+  color: #4ecd5c;
+}
+.login-card {
+  border-radius: 15px;
+  width: 40%;
+  margin: 100px auto;
+  padding: 20px;
+}
+.top-login-card {
+  border-radius: 15px;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+.login-title {
+  font-family: 'Vazir Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.my-input {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #e0e0ec;
+  box-sizing: border-box;
+  border-radius: 15px;
+  outline: none;
+}
+
+.btn-login2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1750ff;
+}
+.verification-code {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  background: #1750ff;
+  border-radius: 15px;
+  color: #ffffff !important;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.login-employer {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffa10b;
+  background: #fff6de;
+  border-radius: 15px;
+  padding: 10px 80px;
+}
+.register-employer {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  background: #ffa10b;
+  border-radius: 15px;
+  padding: 10px 80px;
+}
+.my-orange {
+  background-color: #ffa10b;
+}
+.my-bluesky {
+  background-color: #dee6ff;
+}
+.text-blue {
+  color: #1750ff;
+}
+.my-blue {
+  background-color: #1750ff;
+  color: #fff;
+}
+.btn-login3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1750ff;
+}
+.timer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.my-qray {
+  color: #575a7a;
+}
+.dropdown {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  color: #575a7a;
+  /* padding: 0 0 0 60px; */
+}
+.dropdown:hover {
+  font-size: 16px;
+  color: #575a7a;
+}
+.myred {
+  color: red;
+}
+.my-post-card {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+.in-card {
+  width: 95%;
+  margin: 20px auto 70px;
+}
+.post-title1 {
+  font-family: 'Vazir Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #282b31;
+}
+.post-l {
+  font-size: 14px;
+  line-height: 20px;
+  color: #575a7a;
+  cursor: pointer;
+}
+.label-post {
+  font-family: 'Vazir Bold';
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.post-cash {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.success-post {
+  background: #50d86a;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 10px 25px;
+  transition: .3s;
+}
+.success-post:hover{
+  color:#ffffff;
+  background-color: #50d869c7;
+}

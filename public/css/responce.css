@@ -1,0 +1,321 @@
+@media only screen and (max-width: 1418px) {
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 50%;
+    margin: 100px auto;
+    padding: 25px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .login-employer {
+    padding: 10px 60px;
+  }
+  .register-employer {
+    padding: 10px 60px;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 60%;
+    margin: 100px auto;
+    padding: 25px;
+  }
+}
+@media only screen and (max-width: 1072px) {
+  .label {
+    font-size: 8px !important;
+  }
+  .my-card-4 {
+    background-color: #ffffff;
+    border: 1px solid #d1d0d0;
+    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 70%;
+    margin: 100px auto;
+    padding: 25px;
+  }
+  .my-post-card {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .label {
+    font-size: 14px !important;
+  }
+
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 100px auto;
+    padding: 25px;
+  }
+  .my-post-card {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .label {
+    font-size: 12px !important;
+  }
+
+  .my-card-4 {
+    background-color: #ffffff;
+    border: 1px solid #d1d0d0;
+    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 100px auto;
+    padding: 25px;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+
+  .login-employer {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  .register-employer {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  .success-post {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .post-cash {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .label {
+    display: none !important;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+  .btn-login2 {
+    font-size: 12px;
+  }
+  .verification-code {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  .btn-login3 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 469px) {
+  .my-card-4-title {
+    font-style: normal;
+    font-family: 'Vazir Bold';
+    font-size: 12px;
+    line-height: 15px;
+    color: #575a7a;
+  }
+  .my-card-4 {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .my-card-4-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    color: #575a7a;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 100px auto;
+    padding: 25px;
+  }
+  .login-employer {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  .register-employer {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+  .btn-login2 {
+    font-size: 14px;
+  }
+  .verification-code {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+@media only screen and (max-width: 418px) {
+  .resume-img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .my-card-4 {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .my-card-4-title {
+    font-style: normal;
+    font-family: 'Vazir Bold';
+    font-size: 10px;
+    line-height: 15px;
+    color: #575a7a;
+  }
+  .my-card-4-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    color: #575a7a;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+  .btn-login2 {
+    font-size: 12px;
+  }
+  .verification-code {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+  .btn-login {
+    width: 100%;
+    margin: 10px 10px;
+  }
+  .btn-record {
+    width: 100%;
+    margin: 10px 10px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .top-nav-link {
+    font-size: 12px !important;
+  }
+  .resume-img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .my-btn-2 {
+    width: 250px !important;
+  }
+  .resume-title {
+    font-family: 'Vazir Bold';
+    font-size: 30px;
+    line-height: 20px;
+    color: #282b31;
+  }
+  .resume-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #575a7a;
+  }
+  .icon-pre {
+    display: none;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+  .login-employer {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .register-employer {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .btn-login2 {
+    font-size: 14px;
+  }
+  .verification-code {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 336px) {
+  .btn-login2 {
+    font-size: 12px;
+  }
+  .verification-code {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .login-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+  .btn-login2 {
+    font-size: 12px;
+  }
+  .verification-code {
+    font-size: 10px;
+    padding: 10px 10px;
+  }
+  .login-employer {
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+  .register-employer {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}
