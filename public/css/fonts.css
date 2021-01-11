@@ -22,7 +22,7 @@
   font-family: 'Vazir Light';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/Vazir-Light.ttf') format('truetype');
+  src: url('../fonts/IRANSansWeb\(FaNum\)_UltraLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -38,3 +38,11 @@
   font-weight: normal;
   src: url('../fonts/Vazir-Medium.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2') format('woff2');
+}
+
+

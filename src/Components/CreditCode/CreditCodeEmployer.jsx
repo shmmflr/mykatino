@@ -1,10 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { context } from '../Context/UserContetext';
+import { context } from '../../Core/Context/UserContetext';
 
 const CreditCodeEmployer = () => {
+  const focusInput = useRef(null);
+  useEffect(() => {
+    focusInput.current.focus();
+  }, []);
   const contexts = useContext(context);
-  const { handleVerifyCode, verifyCode, setverifyCode } = contexts;
+  const {
+    verifyCode,
+    setverifyCode,
+    validate,
+    handleVerifyCodeEmployer,
+  } = contexts;
   return (
     <div className="container-fluid">
       <div className="login-card d-flex flex-column">
@@ -14,15 +23,25 @@ const CreditCodeEmployer = () => {
             <p className="timer">2:00</p>
           </div>
           <form
-            onSubmit={(e) => handleVerifyCode(e)}
+            onSubmit={(e) => handleVerifyCodeEmployer(e)}
             className="w-100 d-flex justify-content-center p-2 flex-column"
           >
             <input
-              value={verifyCode}
-              onChange={(e) => setverifyCode(e.target.value)}
+              ref={focusInput}
+              name="verifyCode"
               className="my-input mt-2 pr-3 "
               placeholder="کد تایید را وراد کنید"
+              value={verifyCode}
+              onChange={(e) => {
+                setverifyCode(e.target.value);
+                validate.current.showMessageFor('verifyCode');
+              }}
             />
+            {validate.current.message(
+              'verifyCode',
+              verifyCode,
+              'required|min:6|integer'
+            )}
             <div className="d-flex justify-content-between align-items-center w-100 mt-4">
               <Link to="#" className="mr-3 mt-3">
                 <p className="btn-login2 my-qray">ارسال دوباره</p>

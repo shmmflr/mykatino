@@ -1,8 +1,8 @@
 import http from './HttpService';
 import config from './Config.json';
 
-const ApiKey = process.env.REACT_APP_API_KEY;
-console.log(ApiKey, 2);
+// const ApiKey = process.env.REACT_APP_API_KEY;
+// console.log(ApiKey, 2);
 
 // employee-register
 export const employeeRegister = (user) => {

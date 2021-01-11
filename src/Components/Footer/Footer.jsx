@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Box } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { isEmpty } from 'lodash';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -11,6 +13,7 @@ const useStyles = makeStyles(() => ({
 }));
 const TopFooter = () => {
   const classes = useStyles();
+  const user = useSelector((state) => state.user);
 
   return (
     <Box component="div" className="my-bg-light my-footer  ">
@@ -25,72 +28,77 @@ const TopFooter = () => {
               xs={12}
               item
             >
-              <Grid
-                className="my-5"
-                container
-                direction="row"
-                justify="center"
-                alignItems="center"
-                xs={12}
-                sm={6}
-                md={3}
-                item
-              >
-                <Box
-                  component="div"
-                  className="my-componetnt w-100 d-flex justify-content-between flex-column"
+              {!isEmpty(user) && user.role == 'Employer' ? null : (
+                <Grid
+                  className="my-5"
+                  container
+                  direction="row"
+                  justify="center"
+                  alignItems="center"
+                  xs={12}
+                  sm={6}
+                  md={3}
+                  item
                 >
-                  <h4 className="footer-title mb-4">کارجویان</h4>
-                  <Link to="#">
-                    <p className="footer-txt">آگهی های استخدام</p>
-                  </Link>
-                  <Link to="#">
-                    <p className="footer-txt">ورود / ثبت نام کارجو</p>
-                  </Link>
-                  <Link to="#">
-                    <p className="footer-txt">ایمیل های اطلاع رسانی</p>
-                  </Link>
-                  <Link to="#">
-                    <p className="footer-txt">رزومه ساز آنلاین</p>
-                  </Link>
-                  <Link to="#">
-                    <p className="footer-txt">آشنایی با شرکت</p>
-                  </Link>
-                </Box>
-              </Grid>
+                  <Box
+                    component="div"
+                    className="my-componetnt w-100 d-flex justify-content-between flex-column"
+                  >
+                    <h4 className="footer-title mb-4">کارجویان</h4>
+                    <Link to="#">
+                      <p className="footer-txt">آگهی های استخدام</p>
+                    </Link>
+                    <Link to="#">
+                      <p className="footer-txt">ورود / ثبت نام کارجو</p>
+                    </Link>
+                    <Link to="#">
+                      <p className="footer-txt">ایمیل های اطلاع رسانی</p>
+                    </Link>
+                    <Link to="#">
+                      <p className="footer-txt">رزومه ساز آنلاین</p>
+                    </Link>
+                    <Link to="#">
+                      <p className="footer-txt">آشنایی با شرکت</p>
+                    </Link>
+                  </Box>
+                </Grid>
+              )}
 
-              <Grid
-                container
-                direction="row"
-                justify="center"
-                alignItems="center"
-                xs={12}
-                sm={6}
-                md={3}
-                item
-              >
-                <Box
-                  component="div"
-                  className="my-componetnt w-100 d-flex justify-content-between flex-column"
+              {!isEmpty(user) && user.role == 'Employee' ? null : (
+                <Grid
+                  container
+                  direction="row"
+                  justify="center"
+                  alignItems="center"
+                  xs={12}
+                  sm={6}
+                  md={3}
+                  item
                 >
-                  <h4 className="footer-title mb-4">کارفرمایان</h4>
-                  <Link to="#">
-                    <p className="footer-txt">درج آگهی استخدام</p>
-                  </Link>
-                  <Link to="#">
-                    <p className="footer-txt">ورود به بخش کارفرمایان</p>
-                  </Link>
-                  <Link to="#">
-                    <p className="footer-txt">تعرفه انتشار آگهی</p>
-                  </Link>
-                  <Link to="#">
-                    <p className="footer-txt">سوالات متداول</p>
-                  </Link>
-                  <Link to="#">
-                    <p className="footer-txt">آشنایی با شرکت</p>
-                  </Link>
-                </Box>
-              </Grid>
+                  <Box
+                    component="div"
+                    className="my-componetnt w-100 d-flex justify-content-between flex-column"
+                  >
+                    <h4 className="footer-title mb-4">کارفرمایان</h4>
+                    <Link to="#">
+                      <p className="footer-txt">درج آگهی استخدام</p>
+                    </Link>
+                    <Link to="#">
+                      <p className="footer-txt">ورود به بخش کارفرمایان</p>
+                    </Link>
+                    <Link to="#">
+                      <p className="footer-txt">تعرفه انتشار آگهی</p>
+                    </Link>
+                    <Link to="#">
+                      <p className="footer-txt">سوالات متداول</p>
+                    </Link>
+                    <Link to="#">
+                      <p className="footer-txt">آشنایی با شرکت</p>
+                    </Link>
+                  </Box>
+                </Grid>
+              )}
+
               <Grid
                 container
                 direction="row"

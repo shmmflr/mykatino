@@ -27,6 +27,9 @@ body {
   color: white !important;
   border-radius: 15px !important;
 }
+.btn-record:hover {
+  background-color: #ffa10bb4;
+}
 .btn-login {
   background-color: #1750ff;
   color: white !important;
@@ -63,11 +66,21 @@ body {
   color: #e5e5e5;
 }
 .label {
+  font-family: 'Vazir Bold';
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   color: #282b31;
+}
+.my-btn {
+  align-items: center;
+  margin-bottom: 16.5px;
+  font-size: 16px;
+  color: #fff;
+}
+.btn-login:hover {
+  background-color: #1751ffc9;
 }
 .my-card {
   width: 165px;
@@ -365,9 +378,9 @@ body {
   color: red;
 }
 .my-post-card {
-  width: 50%;
+  width: 70%;
   margin: 50px auto;
-  padding: 20px;
+  padding: 15px;
   background: #ffffff;
   border-radius: 15px;
 }
@@ -412,9 +425,208 @@ body {
   line-height: 20px;
   color: #ffffff;
   padding: 10px 25px;
-  transition: .3s;
+  transition: 0.3s;
+  cursor: pointer;
 }
-.success-post:hover{
-  color:#ffffff;
+.success-post:hover {
+  color: #ffffff;
   background-color: #50d869c7;
+}
+.ck-editor__editable {
+  min-height: 200px !important;
+}
+.my-top-bg {
+  background-color: #00bcd4;
+}
+.my-plus {
+  color: white;
+  background-color: #ffa10b;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+}
+.my-plus:hover {
+  color: #ffffff;
+}
+.my-bell {
+  color: #fff;
+}
+.my-bell:hover {
+  color: #ffffff;
+}
+.my-badge11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10px;
+  padding: 10px;
+  z-index: 999;
+  width: 10px;
+  height: 15px;
+  font-size: 14px;
+}
+.white {
+  color: #ffffff !important;
+}
+.black {
+  color: #000000;
+}
+.backGrund-white {
+  background-color: #ffffff;
+}
+
+.employer-topnav {
+  padding: 10px 20px;
+  background-color: #0ae3ff;
+  border-radius: 5px;
+}
+.my-arrow {
+  background-color: #00bcd4;
+  border-radius: 10px;
+}
+.main-head-employee {
+  width: 80%;
+  margin: 50px auto;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.is-active {
+  color: #00bcd4;
+}
+.press {
+  font-family: 'Vazir Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.press2 {
+  border: 1px solid #e0e0ec;
+  border-radius: 0 5px 5px 0;
+  padding: 5px 10px;
+}
+.press3 {
+  border: 1px solid #e0e0ec;
+  padding: 5px 10px;
+  border-radius: 5px 0 0 5px;
+}
+.press2:hover {
+  color: #575a7a;
+}
+.press3:hover {
+  color: #575a7a;
+}
+.press-select {
+  border: 1px solid #e0e0ec;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+.normal-font {
+  outline: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.normal-font2 {
+  outline: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575a7a;
+}
+.bold-font {
+  font-family: 'Vazir Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #575a7a;
+}
+.btn-record2 {
+  color: #ffffff;
+  padding: 6px 10px;
+  background-color: #ffa10b;
+  border-radius: 5px;
+}
+.btn-record2:hover {
+  color: #ffffff;
+}
+.my-search {
+  border: 1px solid #575a7a;
+  border-radius: 5px;
+}
+.search-btn {
+  background-color: transparent;
+  outline: none;
+  color: #e0e0ec;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn-box {
+  z-index: 9999;
+  margin-bottom: -33px;
+}
+.press-card {
+  border: 1px solid #e0e0ec;
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px;
+}
+.press4 {
+  border: 1px solid #e0e0ec;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+
+.txt {
+  color: #a6adb1;
+}
+.bookmark {
+  font-size: 20px;
+  cursor: pointer;
+}
+.my-badge {
+  font-family: 'Vazir Bold';
+  font-style: normal;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: -5px;
+}
+.my-badge1 {
+  color: #1750ff;
+  background-color: #dee6ff;
+}
+.txt-1 {
+  color: #1750ff;
+}
+.my-badge2 {
+  color: #ffa10b;
+  background-color: #fff6de;
+}
+.txt-2 {
+  color: #ffa10b;
+}
+.my-badge3 {
+  color: #50d86a;
+  background-color: #deffe5;
+}
+.txt-3 {
+  color: #50d86a;
+}
+.img-brand2{
+  width: 35px;
+  height:35px
 }

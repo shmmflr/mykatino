@@ -1,66 +1,46 @@
-import React from 'react'
+import React from 'react';
+import Select from 'react-select';
 
 const MainHeader = () => {
-    return (
-        <>
-            <div className="b-nav d-flex justify-content-center align-items-center">
+  return (
+    <>
+      <div className="b-nav d-flex justify-content-center align-items-center">
         <div className="container-fluid">
           <form className=" b-nav-items ">
-            <div className="form-count form-row align-items-center mx-xs-2 d-flex justify-content-around align-items-center ">
-              <div className=" input-items col-lg-5 col-12  my-1  d-flex justify-content-around ">
-                <label className="col-lg-4 col-md-3 col-5 label mt-2" for="who">
+            <div className="d-lg-flex justify-content-lg-between">
+              <div class="col-lg-5 col-12 mb-3">
+                <label className="label  mt-2" for="who">
                   به دنبال چه چیزی هستید؟
                 </label>
-                <div className="input-group">
-                  <input
-                    type="text"
-                    className="input-item mr-1 ml-auto"
-                    id="who"
-                    placeholder="عنوان،شغل،نام شرکت و..."
-                  />
-                  <div className="input-group-prepend ">
-                    <div className="input-group-text icon-pre">
-                      {' '}
-                      <i className="fa fa-search"></i>{' '}
-                    </div>
-                  </div>
-                </div>
+
+                <input
+                  type="text"
+                  className="form-control"
+                  id="who"
+                  placeholder="عنوان،شغل،نام شرکت و..."
+                />
               </div>
-              <div className=" input-items col-lg-5 my-1 align-items-center d-flex justify-content-center align-items-center">
-                <label
-                  className="col-lg-3 col-md-3 col-5  mt-2 label"
-                  for="city"
-                >
+              <div class="col-lg-5 col-12 mb-3">
+                <label className="label mt-2" for="city">
                   در کدام شهر؟
                 </label>
-                <div className="input-group">
-                  <input
-                    type="text"
-                    className="input-item mr-1  ml-auto"
-                    id="city"
-                    placeholder="استان ،شهر و..."
-                  />
-                  <div className="input-group-prepend ">
-                    <div className="input-group-text icon-pre">
-                      {' '}
-                      <i className="fa fa-map-marker"></i>{' '}
-                    </div>
-                  </div>
-                </div>
+
+                <Select
+                  type="text"
+                  id="city"
+                  placeholder="عنوان،شغل،نام شرکت و..."
+                />
               </div>
-              <div className="col-auto my-1">
-                <div className="col-auto my-1">
-                  <button type="submit" className="btn my-btn btn-login">
-                    جستجو
-                  </button>
-                </div>
+
+              <div className="col-lg-2 col-12  my-btn  d-flex align-items-end">
+                <a className="btn btn-login d-block w-100">جستوجو</a>
               </div>
             </div>
           </form>
         </div>
       </div>
-        </>
-    )
-}
+    </>
+  );
+};
 
-export default MainHeader
+export default MainHeader;

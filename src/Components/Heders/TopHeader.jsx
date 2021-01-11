@@ -7,10 +7,11 @@ import {
 } from 'reactstrap';
 import { isEmpty } from 'lodash';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const TopHeader = () => {
-  const token = localStorage.getItem('token');
-  console.log(token);
+  // const token = localStorage.getItem('token');
+  const user = useSelector((state) => state.user);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -57,12 +58,12 @@ const TopHeader = () => {
                 </a>
               </div>
 
-              {isEmpty(token) ? (
+              {isEmpty(user) ? (
                 <div>
                   <a className="btn btn-record ">
                     <i className="fa fa-shopping-bag ml-1"></i> ثبت آگهی استخدام
                   </a>
-                  <Link to="/employee-register" className="btn btn-login mx-2 ">
+                  <Link to="/Employee-Login" className="btn btn-login mx-2 ">
                     {' '}
                     <i className="fa fa-user"></i> ورود / عضویت
                   </Link>
@@ -79,12 +80,14 @@ const TopHeader = () => {
                     </DropdownToggle>
                     <DropdownMenu className="pl-5 b-redius">
                       {' '}
-                      <DropdownItem className="">
-                        <Link className="dropdown py-2" to="/post-an-ad">
-                          {' '}
-                          درج آگهی{' '}
-                        </Link>
-                      </DropdownItem>
+                      {user.role === 'Employee' ? (
+                        <DropdownItem className="">
+                          <Link className="dropdown py-2" to="/post-an-ad">
+                            {' '}
+                            درج آگهی{' '}
+                          </Link>
+                        </DropdownItem>
+                      ) : null}
                       <DropdownItem className="">
                         <Link className="dropdown py-2" to="#">
                           {' '}

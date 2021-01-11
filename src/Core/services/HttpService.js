@@ -1,12 +1,19 @@
 import axios from 'axios';
-import { errorMessage } from '../Components/utils/message';
+import { errorMessage } from '../utils/message';
 
 const token = localStorage.getItem('token');
 if (token) axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-axios.interceptors.response.use(null, (error) => {
+axios.interceptors.response.use(null, async (error) => {
+  const { data } = error.response;
+  if (error.response.status === 401) {
+    errorMessage(`${data.message[0]}`);
+  }
+  if (error.response.status === 400) {
+    errorMessage(`${data.message[0]} `);
+  }
   const expectedError =
     error.response &&
     error.response.status >= 400 &&

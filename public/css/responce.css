@@ -6,6 +6,12 @@
     margin: 100px auto;
     padding: 25px;
   }
+  .success-post{
+    font-size: 12px;
+  }
+  .post-cash{
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 1160px) {
   .login-employer {
@@ -21,10 +27,18 @@
     margin: 100px auto;
     padding: 25px;
   }
+  .success-post{
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 }
 @media only screen and (max-width: 1072px) {
-  .label {
+  /* .label {
     font-size: 8px !important;
+  } */
+  .success-post{
+    font-size: 12px;
+    padding: 10px 10px;
   }
   .my-card-4 {
     background-color: #ffffff;
@@ -40,8 +54,17 @@
     margin: 100px auto;
     padding: 25px;
   }
-  .my-post-card {
-    width: 70%;
+  .success-post {
+    display: block;
+    width: 100%;
+    margin-top: -10px;
+    text-align: center;
+  }
+  .post-cash {
+    display: block;
+    width: 100%;
+    /* margin-top: 15px; */
+    text-align: center;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -58,6 +81,24 @@
   }
   .my-post-card {
     width: 90%;
+  }
+  .success-post {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .post-cash {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .success-post {
+   font-size: 16px;
+  }
+  .post-cash {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -95,21 +136,12 @@
     font-size: 14px;
     padding: 10px 25px;
   }
-  .success-post {
-    display: block;
-    width: 100%;
-    margin-top: 15px;
-  }
-  .post-cash {
-    display: block;
-    width: 100%;
-    margin-top: 15px;
+  .main-head-employee{
+    font-size: 12px;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 576px) {
-  .label {
-    display: none !important;
-  }
   .login-card {
     border-radius: 15px;
     background-color: #ffffff;
@@ -126,6 +158,9 @@
   }
   .btn-login3 {
     display: none;
+  }
+  .main-head-employee{
+    width: 100%;
   }
 }
 @media only screen and (max-width: 469px) {
@@ -253,9 +288,7 @@
     line-height: 20px;
     color: #575a7a;
   }
-  .icon-pre {
-    display: none;
-  }
+
   .login-card {
     border-radius: 15px;
     background-color: #ffffff;

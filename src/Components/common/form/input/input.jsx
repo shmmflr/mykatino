@@ -6,7 +6,7 @@ const InputForm = ({ setValue }) => {
   };
   return (
     <div>
-      <input onChange={handleChange} />
+      <input className="form-control" onChange={handleChange}  />
     </div>
   );
 };
