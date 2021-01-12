@@ -13,38 +13,38 @@ const PostAnAd = () => {
     focusInput.current.focus();
   }, []);
 
-  // const option = [
-  //   [
-  //     { value: '1', label: 'بیمه' },
-  //     { value: '2', label: 'کامپیوتر' },
-  //     { value: '3', label: 'نرم افزار' },
-  //   ],
-  //   [
-  //     { value: '1', label: 'تمام وقت' },
-  //     { value: '2', label: 'پاره وقت' },
-  //     { value: '3', label: 'دور کاری' },
-  //     { value: '4', label: 'کارآموزی' },
-  //   ],
-  //   [
-  //     { value: '1', label: 'توافقی' },
-  //     { value: '2', label: ' 1 میلیون تومان' },
-  //     { value: '3', label: 'بین 1 تا 3 میلیون تومان' },
-  //     { value: '4', label: 'بین 3 تا 6 میلیون تومان' },
-  //     { value: '5', label: 'بین 6 تا 9 میلیون تومان' },
-  //     { value: '6', label: 'بیشتر از 9 میلیون تومان' },
-  //   ],
-  //   [
-  //     { value: '1', label: 'مرد' },
-  //     { value: '2', label: 'زن' },
-  //   ],
+  const option = [
+    [
+      { value: '1', label: 'بیمه' },
+      { value: '2', label: 'کامپیوتر' },
+      { value: '3', label: 'نرم افزار' },
+    ],
+    [
+      { value: '1', label: 'تمام وقت' },
+      { value: '2', label: 'پاره وقت' },
+      { value: '3', label: 'دور کاری' },
+      { value: '4', label: 'کارآموزی' },
+    ],
+    [
+      { value: '1', label: 'توافقی' },
+      { value: '2', label: ' 1 میلیون تومان' },
+      { value: '3', label: 'بین 1 تا 3 میلیون تومان' },
+      { value: '4', label: 'بین 3 تا 6 میلیون تومان' },
+      { value: '5', label: 'بین 6 تا 9 میلیون تومان' },
+      { value: '6', label: 'بیشتر از 9 میلیون تومان' },
+    ],
+    [
+      { value: '1', label: 'مرد' },
+      { value: '2', label: 'زن' },
+    ],
 
-  //   [
-  //     { value: '1', label: 'مهم نیست' },
-  //     { value: '2', label: ' پایان خدمت' },
-  //     { value: '3', label: 'معافیت تحصیلی' },
-  //     { value: '4', label: 'معافیت دائم' },
-  //   ],
-  // ];
+    [
+      { value: '1', label: 'مهم نیست' },
+      { value: '2', label: ' پایان خدمت' },
+      { value: '3', label: 'معافیت تحصیلی' },
+      { value: '4', label: 'معافیت دائم' },
+    ],
+  ];
 
   const initialState = {
     fieldOfActivity: 0,
@@ -58,45 +58,45 @@ const PostAnAd = () => {
     military: '',
     descriptionOfJob: '',
   };
-  // const [fieldOfActivity, setFieldOfActivity] = useState();
-  // const [title, setTitle] = useState();
-  // const [city, setCity] = useState();
-  // const [typeOfCooperation, setTypeOfCooperation] = useState();
-  // const [salary, setSalary] = useState();
-  // const [workExperience, setWorkExperience] = useState();
-  // const [degreeOfEducation, setDegreeOfEducation] = useState();
-  // const [gender, setGender] = useState();
-  // const [military, setmilitary] = useState();
-  // const [descriptionOfJob, setDescriptionOfJob] = useState();
+  const [fieldOfActivity, setFieldOfActivity] = useState();
+  const [title, setTitle] = useState();
+  const [city, setCity] = useState();
+  const [typeOfCooperation, setTypeOfCooperation] = useState();
+  const [salary, setSalary] = useState();
+  const [workExperience, setWorkExperience] = useState();
+  const [degreeOfEducation, setDegreeOfEducation] = useState();
+  const [gender, setGender] = useState();
+  const [military, setmilitary] = useState();
+  const [descriptionOfJob, setDescriptionOfJob] = useState();
 
-  const [form, setstate] = useState(initialState);
+  // const [form, setstate] = useState(initialState);
 
-  const updateField = (e) => {
-    setstate({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const updateField = (e) => {
+  //   setstate({
+  //     ...form,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
   const dispatch = useDispatch();
 
   const handlePostAnAd = async (event) => {
     event.preventDefault();
     try {
-      // let data = new FormData();
-      // data.append('fieldOfActivity', Number.parseInt(fieldOfActivity));
-      // data.append('title', title);
-      // data.append('city', city);
-      // data.append('typeOfCooperation', Number.parseInt(typeOfCooperation));
-      // data.append('salary', Number.parseInt(salary));
-      // data.append('workExperience', Number.parseInt(workExperience));
-      // data.append('degreeOfEducation', Number.parseInt(degreeOfEducation));
-      // data.append('gender', Number.parseInt(gender));
-      // data.append('military', military);
-      // data.append('descriptionOfJob', descriptionOfJob);
-      // dispatch(addAdver(data));
-      dispatch(addAdver(form));
-      console.log(form);
+      let data = new FormData();
+      data.append('fieldOfActivity', Number.parseInt(fieldOfActivity));
+      data.append('title', title);
+      data.append('city', city);
+      data.append('typeOfCooperation', Number.parseInt(typeOfCooperation));
+      data.append('salary', Number.parseInt(salary));
+      data.append('workExperience', Number.parseInt(workExperience));
+      data.append('degreeOfEducation', Number.parseInt(degreeOfEducation));
+      data.append('gender', Number.parseInt(gender));
+      data.append('military', military);
+      data.append('descriptionOfJob', descriptionOfJob);
+      dispatch(addAdver(data));
+      // dispatch(addAdver(form));
+      console.log(data);
     } catch (ex) {
       console.log(ex);
     }
@@ -126,69 +126,42 @@ const PostAnAd = () => {
                   name="title"
                   className="form-control"
                   placeholder="عنوان آگهی"
-                  value={form.title}
-                  onChange={updateField}
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
                 />
               </div>
               <div className="d-md-flex justify-content-center w-100   mt-3 ">
                 <div className="mt-2  col-md-6 col-12">
                   <label className="label-post mr-1">دسته بندی شغلی</label>
-                  {/* <Select
-                    placeholder="دسته بندی شغلی"
-                    options={option[0]}
-                    // defaultValue={option[0][2]}
-                    value={descriptionOfJob}
-                    onChange={(e) => {
-                      setDescriptionOfJob(e.target.value);
-                    }}
-                  /> */}
-                  <select
+
+                  <Select
                     name="descriptionOfJob"
-                    className="form-control"
-                    value={form.descriptionOfJob}
-                    onChange={updateField}
-                  >
-                    <option value="" disabled selected>
-                      دسته بندی شغلی
-                    </option>
-                    <option value="pro">برنامه نویسی</option>
-                    <option value="2">بازار یابی</option>
-                    <option value="3">مشاوره</option>
-                    <option value="4">طراحی</option>
-                  </select>
+                    isMulti
+                    value={descriptionOfJob}
+                    onChange={(e) => setDescriptionOfJob(e.target.value)}
+                    options={option[0]}
+                    menuPortalTarget={document.body}
+                    styles={{
+                      menuPortal: (base) => ({ ...base, zIndex: 9999 }),
+                    }}
+                  />
                 </div>
                 <div className="mt-2 col-12 col-md-6 ">
                   <label className="label-post mr-1">انتخاب استان/شهر</label>
-                  {/* <Select
+                  <Select
                     name="city"
                     placeholder="انتخاب شهر/استان"
                     value={city}
                     onChange={(e) => {
                       setCity(e.target.value);
                     }}
-                  /> */}
-                  <select
-                    name="city"
-                    className="form-control"
-                    value={form.city}
-                    onChange={updateField}
-                  >
-                    <option value="" disabled selected>
-                      انتخاب شهر/استان
-                    </option>
-                    <option value="0">مازندران/ساری</option>
-
-                    {/* <option>برنامه نویسی</option>
-                    <option>بازار یابی</option>
-                    <option>مشاوره</option>
-                    <option>طراحی</option> */}
-                  </select>
+                  />
                 </div>
               </div>
               <div className="d-md-flex justify-content-center w-100   mt-3 ">
                 <div className="mt-2  col-md-6 col-12">
                   <label className="label-post mr-1">نوع همکاری </label>
-                  {/* <Select
+                  <Select
                     name="typeOfCooperation"
                     placeholder="نوع همکاری"
                     options={option[1]}
@@ -197,24 +170,11 @@ const PostAnAd = () => {
                     onChange={(e) => {
                       setTypeOfCooperation(e.target.value);
                     }}
-                  /> */}
-                  <select
-                    name="typeOfCooperation"
-                    className="form-control"
-                    value={form.typeOfCooperation}
-                    onChange={updateField}
-                  >
-                    <option selected>نوع همکاری</option>
-
-                    <option value="0"> تمام وقت</option>
-                    <option value="1">نیمه وقت </option>
-                    <option value="2">دورکاری</option>
-                    <option value="3">کارآموزی</option>
-                  </select>
+                  />
                 </div>
                 <div className="mt-2 col-12 col-md-6">
                   <label className="label-post mr-1">میزان حقوق</label>
-                  {/* <Select
+                  <Select
                     name="salary"
                     options={option[2]}
                     placeholder="میزان حقوق"
@@ -222,20 +182,7 @@ const PostAnAd = () => {
                     onChange={(e) => {
                       setSalary(e.target.value);
                     }}
-                  /> */}
-                  <select
-                    name="salary"
-                    className="form-control"
-                    value={form.salary}
-                    onChange={updateField}
-                  >
-                    <option selected>میزان حقوق</option>
-
-                    <option value="0"> توافقی</option>
-                    <option value="1">1 میلیون تومان </option>
-                    <option value="2">1 تا 3 میلیون تومان</option>
-                    <option value="3">3 میلیون به بالا</option>
-                  </select>
+                  />
                 </div>
               </div>
               <div className="w-100 mt-3 col-12">
@@ -259,109 +206,52 @@ const PostAnAd = () => {
                       '|',
                     ],
                   }}
-                  // value={degreeOfEducation}
-                  // onChange={(e) => {
-                  //   setDegreeOfEducation(e.target.value);
-                  // }}
                 />
               </div>
               <div className="d-md-flex justify-content-center w-100   mt-3 ">
                 <div className="mt-2  col-md-6 col-12">
                   <label className="label-post mr-1">سابقه کار مرتبط </label>
-                  {/* <Select
+                  <Select
                     name="workExperience"
                     value={workExperience}
                     onChange={(e) => {
                       setWorkExperience(e.target.value);
                     }}
-                  /> */}
-                  <select
-                    name="workExperience"
-                    className="form-control"
-                    value={form.workExperience}
-                    onChange={updateField}
-                  >
-                    <option selected>سابقه کار مرتبط</option>
-
-                    <option value="0"> تازه کار</option>
-                    <option value="1">1 سال </option>
-                    <option value="2">2 تا 4 سال</option>
-                    <option value="3">4 سال به بالا</option>
-                  </select>
+                  />
                 </div>
                 <div className="mt-2 col-12 col-md-6">
                   <label className="label-post mr-1">انتخاب استان/شهر</label>
-                  {/* <Select
+                  <Select
                     name="city"
                     value={city}
                     onChange={(e) => {
                       setCity(e.target.value);
                     }}
-                  /> */}
-                  <select
-                    name="city"
-                    className="form-control"
-                    value={form.city}
-                    onChange={updateField}
-                  >
-                    <option value="" disabled selected>
-                      انتخاب شهر/استان
-                    </option>
-                    {/* 
-                    <option> تازه کار</option>
-                    <option>1 سال </option>
-                    <option>2 تا 4 سال</option>
-                    <option>4 سال به بالا</option> */}
-                  </select>
+                  />
                 </div>
               </div>
               <div className="d-md-flex justify-content-center w-100   mt-3 ">
                 <div className="mt-2  col-md-6 col-12">
                   <label className="label-post mr-1">جنسیت </label>
-                  {/* <Select
+                  <Select
                     name="gender"
                     options={option[3]}
                     value={gender}
                     onChange={(e) => {
                       setGender(e.target.value);
                     }}
-                  /> */}
-                  <select
-                    name="gender"
-                    className="form-control"
-                    value={form.gender}
-                    onChange={updateField}
-                  >
-                    <option value="" disabled selected>
-                      {' '}
-                      جنسیت
-                    </option>
-                    <option value="0">مرد </option>
-                    <option value="1">زن</option>
-                  </select>
+                  />
                 </div>
                 <div className="mt-2 col-12 col-md-6">
                   <label className="label-post mr-1">وضعیت خدمت سربازی</label>
-                  {/* <Select
+                  <Select
                     name="military"
                     options={option[4]}
                     value={military}
                     onChange={(e) => {
                       setmilitary(e.target.value);
                     }}
-                  /> */}
-                  <select
-                    name="military"
-                    className="form-control"
-                    value={form.military}
-                    onChange={updateField}
-                  >
-                    <option selected>وضعیت خدمت سربازی</option>
-                    <option value="1">فرقی ندارد</option>
-                    <option value="2"> پایان خدمت</option>
-                    <option value="3">معاف دائم </option>
-                    <option value="4">معاف تحصیلی</option>
-                  </select>
+                  />
                 </div>
               </div>
               <div className="row">

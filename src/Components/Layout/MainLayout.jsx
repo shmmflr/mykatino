@@ -6,6 +6,7 @@ import BestCompany from '../Company/BestCompany';
 import Resume from '../Resume/Resume';
 import TopFooter from '../Footer/TopFooter';
 import Footer from '../Footer/Footer';
+import EmployerTopHeader from '../Heders/EmployerTopHeader';
 
 const MainLayout = (props) => {
   const { pathname } = props.location;

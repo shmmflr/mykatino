@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
 
 const MainHeader = () => {
+  useEffect(() => {
+    serverResult();
+  }, []);
+
+  const [city, setCity] = useState({
+    value: '0',
+    label: 'شهر/استان مورد نظر خود را انتخاب کنید',
+  });
+  const [cityList, setCityList] = useState([]);
+  const serverResult = () => {
+    const cityOption = [
+      { value: 1, label: 'مازندران/ساری' },
+      { value: 2, label: 'خراسان رضوی/مشهد' },
+      { value: 3, label: 'تهران/تهران' },
+      { value: 4, label: 'البرز/کرج' },
+      { value: 5, label: 'اصفهان/اصفهان' },
+      { value: 6, label: 'گیلان/گیلان' },
+      { value: 7, label: 'سمنان/سمنان' },
+      { value: 8, label: 'خوزستان/اهواز' },
+    ];
+    const option = cityOption.map((item) => ({
+      value: item.value,
+      label: item.label,
+    }));
+    setCityList(option);
+  };
   return (
     <>
       <div className="b-nav d-flex justify-content-center align-items-center">
@@ -26,9 +52,13 @@ const MainHeader = () => {
                 </label>
 
                 <Select
+                  isSearchable
                   type="text"
                   id="city"
-                  placeholder="عنوان،شغل،نام شرکت و..."
+                  name="city"
+                  options={cityList}
+                  value={city}
+                  onChange={setCity}
                 />
               </div>
 

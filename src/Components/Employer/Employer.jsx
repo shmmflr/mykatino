@@ -50,7 +50,7 @@ const Employer = () => {
             </div>
             <div className="d-flex ">
               <Link
-                to="/Employe/PostAnAd"
+                to="/Master/PostAnAd"
                 className="d-flex align-items-center btn-record2 normal-font"
               >
                 درج آگهی <i className="fa fa-plus mr-2"></i>

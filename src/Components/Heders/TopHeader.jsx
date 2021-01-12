@@ -80,9 +80,9 @@ const TopHeader = () => {
                     </DropdownToggle>
                     <DropdownMenu className="pl-5 b-redius">
                       {' '}
-                      {user.role === 'Employee' ? (
+                      {user.role === 'Employer' ? (
                         <DropdownItem className="">
-                          <Link className="dropdown py-2" to="/post-an-ad">
+                          <Link className="dropdown py-2" to="/Master/PostAnAd">
                             {' '}
                             درج آگهی{' '}
                           </Link>

@@ -47,22 +47,26 @@ const Katino = () => {
             {' '}
             <Route
               path="/Master/PostAnAd"
-              render={() =>
-                !isEmpty(user) && user.role == 'Employer' ? (
+              render={
+                () => (
+                  // !isEmpty(user) && user.role == 'Employer' ? (
                   <PostAnAd />
-                ) : (
-                  <Redirect to="/" />
                 )
+                // ) : (
+                //   <Redirect to="/" />
+                // )
               }
             />
             <Route
               path="/Master"
-              render={() =>
-                !isEmpty(user) && user.role == 'Employer' ? (
+              render={
+                () => (
+                  // !isEmpty(user) && user.role == 'Employer' ? (
                   <Employer />
-                ) : (
-                  <Redirect to="/" />
                 )
+                //   ) : (
+                //     <Redirect to="/" />
+                //   )
               }
             />
           </Switch>
@@ -146,10 +150,7 @@ const Katino = () => {
 
             <Route path="/logout" component={Logout} />
             <Route path="/" exact component={AllJobs} />
-            {/* <Route path="*" exact component={NotFound} /> */}
-
-            {/* <Route path="/404" component={NotFound} />
-        <Redirect from="*" to="/404" /> */}
+            <Route path="*" exact component={NotFound} />
           </Switch>
         </MainLayout>
       </Route>
